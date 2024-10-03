@@ -12,19 +12,19 @@ html {
 }
 
 body {
-  background-color: black; /* Fundo preto */
-  color: white; /* Texto branco */
+  background-color: black;
+  color: white;
   font-family: "League Spartan", sans-serif;
 }
 
 .navbar {
-  background-color: black; /* Navbar preta */
+  background-color: black;
 }
 
 .gradient-text h2,
 .gradient-text p,
 .content h2 {
-  color: white; /* Letras das seções como branco */
+  color: white;
   font-size: 35px;
   padding-top: 27px;
 }
@@ -46,8 +46,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; /* Para centralizar verticalmente */
-  height: 900px; /* Altura fixa */
+  align-items: center;
+  height: 900px;
 }
 
 .carousel-item img {
