@@ -43,21 +43,25 @@ body {
 }
 
 #carouselSection {
-  margin-top: 25px;  
-  width: 100%;  
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  height: 900px; 
+  color: rgb(255, 255, 255);
+  padding: 50px;
+  text-align: center;
+  width: 100%;
 
-  .carousel-item img {
-    width: 80%; 
-    height: 100%; 
-    object-fit: cover; 
-    border-radius: 20px; 
-    margin: 0 auto;
+    #carouselExample {
+      margin: 0 auto; 
+      max-width: 85%; 
+  
+      .carousel-item {
+        img {
+          max-height: 900px; 
+          width: 95%; 
+          border-radius: 20px;
+          margin: 0 auto;
+        }
+      }
+    }
   }
-}
 
 .carousel-caption {
   position: absolute;
@@ -114,7 +118,7 @@ body {
     .carousel-item {
       img {
         max-height: 900px; 
-        width: 80%; 
+        width: 95%; 
         border-radius: 20px;
         margin: 0 auto;
       }
