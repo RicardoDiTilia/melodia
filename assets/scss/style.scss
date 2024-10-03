@@ -1,0 +1,93 @@
+// Variáveis
+$primary-color: #00acee;
+$secondary-color: #1c1c1e;
+$font-color: #000000;
+$icon-color: #00acee;
+
+// Estilos globais
+body {
+  background-color: $secondary-color;
+  color: $font-color;
+  font-family: 'Kanit', sans-serif;
+}
+
+// Navbar
+.navbar {
+  background-color: $secondary-color;
+
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .nav-link {
+    color: $font-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.benefits {
+    background-color: darken($secondary-color, 5%);
+  
+    .fa-3x {
+      color: $icon-color;
+      margin-bottom: 15px;
+    }
+  
+    h3 {
+      margin-top: 20px;
+      font-size: 1.5rem;
+    }
+  
+    p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+  
+    .row {
+      margin-top: 40px;
+    }
+  }
+  
+
+// Hero section
+.hero {
+  background: url('../img/hero-background.jpg') no-repeat center center/cover;
+  height: 100vh;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+    color: $font-color;
+  }
+
+  .btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      border-color: darken($primary-color, 10%);
+    }
+  }
+
+  .intro {
+    margin-top: 40px;
+    max-width: none;
+    text-align: center;
+
+    img, video {
+      max-width: 100%;
+      border-radius: 10px;
+      
+    }
+    
+  }
+}
+
+
