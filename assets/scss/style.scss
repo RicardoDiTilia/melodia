@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +8,16 @@
 html {
   overflow-x: hidden;  // Evita o scroll lateral
   width: 100vw;  // Força o corpo da página a ter no máximo a largura da viewport
-  font-family: 'Arial', sans-serif;
   background-color: #121212;
 }
 
 body {
   background-color: black; /* Fundo preto */
   color: white; /* Texto branco */
+  font-family: "League Spartan", sans-serif;
 }
+
+
 
 .navbar {
   background-color: black; /* Navbar preta */
@@ -22,10 +25,17 @@ body {
 
 .gradient-text h2,
 .gradient-text p,
-.content h2,
-.content p {
+.content h2{
   color: white; /* Letras das seções como branco */
+  font-size: 35px;
+  padding-top: 27px;
 }
+
+.content p{
+  font-size: 25px;
+  color: white;
+}
+
 
 .custom-navbar {
   background-color: black;  // Navbar preta
@@ -35,28 +45,47 @@ body {
 }
 
 #carouselSection {
-  margin-top: 70px;  // Espaço para não sobrepor a navbar
-  width: 100%;  // Garante que a seção ocupe 100% da largura
+  margin-top: 25px;  
+  width: 100%;  
   display: flex;
   justify-content: center;
+  align-items: center; /* Para centralizar verticalmente */
+  height: 900px; /* Altura fixa */
 }
 
 .carousel-item img {
-  max-height: 400px;  // Reduz a altura máxima das imagens no carrossel
-  width: 80%;  // Define a largura das imagens como 80% da tela para criar bordas laterais
-  border-radius: 20px;  // Bordas arredondadas nas imagens
+  width: 80%; /* Largura da imagem */
+  height: 100%; /* Altura total do carrossel */
+  object-fit: cover; /* Cobre o espaço disponível sem distorcer a imagem */
+  border-radius: 20px; 
   margin: 0 auto;
 }
 
-.carousel-caption h2 {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);  // Fundo semitransparente
-  padding: 10px;
-  border-radius: 10px;
+.carousel-caption {
+  position: absolute;
+  top: 1px; // Ajuste a posição vertical conforme necessário
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; // Garante que o texto esteja na frente das imagens
+  color: white; // Muda a cor do texto, se necessário
+  text-align: center; // Centraliza o texto
 }
 
+.carousel-caption h2 {
+  font-size: 2rem; // Tamanho do texto
+  margin: 0; // Remove margens padrão
+
+  i {
+    font-size: 4.5rem; // Tamanho do ícone
+    display: block; // Faz o ícone se comportar como bloco, permitindo centralização
+    margin: 0 auto; // Centraliza o ícone
+    margin-bottom: 0.5rem; // Espaçamento abaixo do ícone
+  }
+}
+
+
 .highlights {
-  background: linear-gradient(180deg, black, #00d4ff);
+  background: linear-gradient(180deg, #00697e, #00414e, #00252c, #000000);
   color: white;
   padding: 50px;
   text-align: center;
@@ -67,29 +96,33 @@ body {
   width: 100%;  // Ajuste para evitar overflow
 }
 
-#discographySection .gradient-text {
-  background: linear-gradient(180deg, black, white);
+#discographySection {
+  background: linear-gradient(180deg, black, black, rgb(0, 32, 58));
   color: black;
   padding: 50px;
   text-align: center;
   width: 100%;  // Garante que a seção respeite a largura da tela
+
+  h2 {
+    margin-bottom: 10px; // Adiciona um espaço abaixo do título
+    padding-top: 20px;
+    font-size: 35px;
+  }
+
+  p {
+    margin-bottom: 10px; // Adiciona um espaço abaixo do parágrafo
+    font-size: 25px;
+  }
 }
 
+
+
+
 #discographySection img {
-  max-height: 200px;  // Reduz a altura máxima também nesta seção
+  max-height: 900px;  // Reduz a altura máxima também nesta seção
   width: 80%;  // Limita a largura da imagem a 80% da tela para criar bordas
   border-radius: 20px;
   margin: 0 auto;
 }
 
-/* Ajustes adicionais para evitar o scroll lateral */
-section {
-  padding: 0;
-  margin: 0;
-}
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
