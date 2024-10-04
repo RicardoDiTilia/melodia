@@ -7,7 +7,7 @@
 html {
   overflow-x: hidden;
   width: 100vw;
-  background-color: #121212;
+  background-color: rgba(0, 8, 14, 0.937254902);
 }
 
 body {
@@ -41,6 +41,7 @@ body {
 }
 
 #carouselSection {
+  background-color: rgba(0, 8, 14, 0.937254902);
   color: rgb(255, 255, 255);
   padding: 50px;
   text-align: center;
@@ -83,6 +84,68 @@ body {
   padding: 50px;
   text-align: center;
   width: 100%;
+}
+
+#musicPlayerSection {
+  padding: 50px 0;
+  background-color: rgba(0, 8, 14, 0.937254902);
+  color: rgba(255, 255, 255, 0.937254902);
+  padding-right: 110px;
+}
+#musicPlayerSection h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#musicPlayerSection .player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+#musicPlayerSection .cover-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  animation: spin 5s linear infinite;
+  object-fit: cover;
+  margin-bottom: 36px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#musicPlayerSection .audio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+#musicPlayerSection audio {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#musicPlayerSection .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+#musicPlayerSection .controls button {
+  background-color: rgba(0, 8, 14, 0.937254902);
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 0 5px;
 }
 
 #discographySection {

@@ -101,6 +101,36 @@
   </div>
 </section>
 
+<!-- Player de Música -->
+<section id="musicPlayerSection" class="music-player">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <div class="player">
+          <!-- Capa do álbum à esquerda -->
+          <img id="musicCover" src="assets/img/collab/cover/PLABOI CARTI.png" alt="Capa da Música" class="cover-image">
+          <div class="audio-section">
+            <!-- Título da música acima do player -->
+            <h3 id="musicTitle">Playboi Carti, The Weeknd - Timeless</h3>
+            <audio id="audioPlayer" controls>
+              <source src="assets/img/songs/timeless.mp3" type="audio/mp3">
+              Seu navegador não suporta o player de áudio.
+            </audio>
+            <!-- Controles abaixo do player -->
+            <div class="controls mt-3">
+              <button class="btn btn-primary" id="prevSong"><i class="fas fa-backward"></i></button>
+              <button class="btn btn-primary" id="nextSong"><i class="fas fa-forward"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 <!-- Discografias -->
 <section id="discographySection">
   <h2 class="text-center">As Melhores Discografias</h2>
@@ -179,12 +209,12 @@
         <div class="testimonial">
           <img src="assets/img/perfil/perfil5.jpg" alt="Usuário C" class="user-icon">
           <p>"Esse app revolucionou minha forma de descobrir novas músicas. Interface incrível!</p>
-          <cite>- Ana M.</cite>
+          <cite>- Carlos L.</cite>
         </div>
         <div class="testimonial">
           <img src="assets/img/perfil/perfil4.jpg" alt="Usuário D" class="user-icon">
           <p>"Simples, rápido e com playlists perfeitas. Não vivo mais sem!"</p>
-          <cite>- Carlos L.</cite>
+          <cite>- Ana M.</cite>
         </div>
         <div class="testimonial">
           <img src="assets/img/perfil/perfil3.jpg" alt="Usuário E" class="user-icon">
@@ -220,5 +250,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
