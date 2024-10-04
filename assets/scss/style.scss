@@ -17,6 +17,7 @@ body {
   background-color: #00080eef;
   color: white;
   font-family: "League Spartan", sans-serif;
+  width: 100%;
 }
 
 .navbar {
@@ -73,10 +74,10 @@ body {
   position: absolute;
   top: 1px;
   left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  color: white;
+  transform: translate(-50%, 0);
   text-align: center;
+  max-width: 90%; // Permite que o conteúdo ocupe até 90% da largura do container
+  width: 100%; // Garante que o conteúdo se ajuste ao tamanho do carrossel
 
   h2 {
     font-size: 2rem;
@@ -89,36 +90,102 @@ body {
       margin-bottom: 0.5rem;
     }
   }
-}
 
-.highlights {
-  background: linear-gradient(180deg, #00697e, #00414e, #00252c,#00080eef);
-  padding: 40px 0;
+  // Estilos para telas menores
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 0.8rem;
+    }
 
-  .highlight-card {
-      background-color: #1a1a1a; // Fundo dos cards
-      border-radius: 8px;
-      padding: 20px;
-      transition: transform 0.3s;
+    h2 i {
+      font-size: 1rem !important;
+    }
 
-      &:hover {
-          transform: translateY(-5px); // Efeito de elevação ao passar o mouse
-      }
-
-      h4 {
-          margin-top: 15px;
-          color: #f0f0f0; // Cor do texto
-      }
-
-      p {
-          color: #b0b0b0; // Cor do texto mais suave
-      }
-
-      i {
-          color: #4f16aa; // Cor dos ícones
-      }
+    max-width: 100%; // Expande o texto para ocupar mais espaço em telas pequenas
+    padding: 0 10px; // Adiciona algum espaço interno nas laterais
   }
 }
+
+
+
+
+
+.highlights {
+  background: linear-gradient(180deg, #00697e, #00414e, #00252c, #00080eef);
+  padding: 80px 0; // Alinhando o padding com a seção de features
+  width: 100%; // Garante que a seção ocupe toda a largura
+  margin: 0; // Remove margens para que não haja espaço nas laterais
+
+  .container {
+    width: 100%; // Garante que o container ocupe toda a largura
+    max-width: 1200px; // Largura máxima para centralização
+    margin: 0 auto; // Centraliza o container
+    padding: 0 15px; // Adiciona espaçamento interno
+  }
+
+  .row {
+    display: flex; // Usamos flexbox
+    justify-content: center; // Centraliza os cartões na linha
+    flex-wrap: wrap; // Permite que os cartões se movam para a linha seguinte
+    margin: 0 -10px; // Ajuste para lidar com o espaçamento entre os cartões
+    margin-right: 5px;
+  }
+
+  .col-md-4 {
+    flex: 1 1 30%; // Ajusta o tamanho das colunas para ocupar 30% do espaço
+    max-width: calc(33.33% - 30px); // Limita a largura máxima para 3 colunas
+    margin: 15px; // Adiciona espaço entre os cartões
+    transition: transform 0.3s ease; // Transição suave
+
+    @media (max-width: 768px) { // Media query para telas menores
+      flex: 1 1 100%; // Ocupa 100% do espaço
+      max-width: 100%; // Limita a largura máxima a 100%
+      margin: 10px 0; // Margem entre os cartões
+      transform: scale(0.9); // Reduz o tamanho dos cards levemente
+    }
+  }
+
+  .highlight-card {
+    position: relative;
+    border-radius: 15px; // Mesma borda arredondada
+    overflow: hidden;
+    background-color: #1a1a1a; // Fundo dos cards
+    height: 215px; // Altura fixa para garantir que sejam quadrados
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    color: white; // Cor do texto
+
+    &:hover {
+      transform: scale(1.05); // Aumenta o tamanho ao passar o mouse
+    }
+
+    h4 {
+      font-size: 24px; // Tamanho do título
+      margin: 10px 0 0;
+      position: relative; // Para que o texto se sobreponha à imagem
+      z-index: 1; // Aumenta a sobreposição em relação ao fundo
+    }
+
+    p {
+      margin-top: 5px; // Margem acima do parágrafo
+      color: #b3b3b3; // Cor do texto da descrição
+      position: relative;
+      z-index: 1; // Aumenta a sobreposição em relação ao fundo
+    }
+
+    i {
+      font-size: 40px; // Tamanho do ícone
+      position: absolute;
+      top: 20px; // Distância do topo
+      color: #4f16aa; // Cor do ícone
+      z-index: 1; // Aumenta a sobreposição em relação ao fundo
+    }
+  }
+}
+
 
 .quality-title {
   font-size: 2.5rem;
@@ -161,7 +228,6 @@ body {
     height: 80px;
     border-radius: 50%;
     margin-right: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     animation: spin 5s linear infinite;
     object-fit: cover;
     margin-bottom: 36px;
@@ -248,6 +314,7 @@ audio {
   padding: 50px;
   text-align: center;
   width: 100%;
+  margin-top: -45px;
 
   h2 {
     margin-bottom: 10px;
@@ -294,13 +361,22 @@ audio {
     justify-content: center; // Centraliza os cartões na linha
     flex-wrap: wrap; // Permite que os cartões se movam para a linha seguinte
     margin: 0 -10px; // Ajuste para lidar com o espaçamento entre os cartões
+    margin-left: 18px;
   }
 
   .col-md-4 {
     flex: 1 1 30%; // Ajusta o tamanho das colunas para ocupar 30% do espaço
     max-width: calc(33.33% - 30px); // Limita a largura máxima para 3 colunas
     margin: 15px; // Adiciona espaço entre os cartões
-    padding-right: 30px;
+    padding-right: 65px;
+    transition: transform 0.3s ease; // Transição suave
+
+    @media (max-width: 768px) { // Media query para telas menores
+      flex: 1 1 100%; // Ocupa 100% do espaço
+      max-width: 100%; // Limita a largura máxima a 100%
+      margin: 10px 0; // Margem entre os cartões
+      transform: scale(0.9); // Reduz o tamanho dos cards levemente
+    }
   }
 
   .card {
@@ -316,7 +392,6 @@ audio {
     align-items: center;
     transition: transform 0.3s ease;
     color: white; // Cor do texto
-
 
     &:hover {
       transform: scale(1.05); // Aumenta o tamanho ao passar o mouse
@@ -505,3 +580,4 @@ footer {
   border-radius: 50%; // Redondo
   margin-bottom: 15px; // Espaçamento abaixo do ícone
 }
+
