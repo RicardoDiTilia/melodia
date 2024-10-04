@@ -1,6 +1,7 @@
 const audioPlayer = document.getElementById("audioPlayer");
 const musicTitle = document.getElementById("musicTitle");
 const musicCover = document.getElementById("musicCover");
+const playNowButton = document.getElementById("playNowButton");
 
 // Array de músicas
 const songs = [
@@ -71,6 +72,11 @@ function loadSong(index) {
     musicCover.src = song.cover;
     audioPlayer.load();
 }
+
+// Evento para o botão "Ouça Agora"
+playNowButton.addEventListener("click", () => {
+    audioPlayer.play();
+});
 
 // Evento para o botão "Próxima Música"
 document.getElementById("nextSong").addEventListener("click", () => {

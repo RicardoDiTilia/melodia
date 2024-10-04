@@ -103,14 +103,29 @@ body {
   color: #4f16aa;
 }
 
+.quality-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#playNowButton {
+  padding: 10px 20px; /* Ajusta a altura e largura do botão */
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+  margin-bottom: 1px;
+}
+
 #musicPlayerSection {
   padding: 50px 0;
   background-color: rgba(0, 8, 14, 0.937254902);
   color: rgba(255, 255, 255, 0.937254902);
   padding-right: 110px;
+  padding-top: 2px;
 }
 #musicPlayerSection h3 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -120,6 +135,7 @@ body {
   justify-content: center;
   text-align: left;
   border-radius: 25px;
+  border: #24005e;
 }
 #musicPlayerSection .cover-image {
   width: 80px;
@@ -151,6 +167,7 @@ body {
   background-color: rgba(0, 8, 14, 0.937254902); /* Azul escuro para o fundo do player */
   color: #ffffff; /* Texto branco no player */
   border-radius: 85px; /* Deixa as bordas arredondadas */
+  border: #24005e;
 }
 #musicPlayerSection .controls {
   display: flex;
