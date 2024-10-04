@@ -93,11 +93,33 @@ body {
 
 .highlights {
   background: linear-gradient(180deg, #00697e, #00414e, #00252c,#00080eef);
-  color: white;
-  padding: 50px;
-  text-align: center;
-  width: 100%;
+  padding: 40px 0;
+
+  .highlight-card {
+      background-color: #1a1a1a; // Fundo dos cards
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.3s;
+
+      &:hover {
+          transform: translateY(-5px); // Efeito de elevação ao passar o mouse
+      }
+
+      h4 {
+          margin-top: 15px;
+          color: #f0f0f0; // Cor do texto
+      }
+
+      p {
+          color: #b0b0b0; // Cor do texto mais suave
+      }
+
+      i {
+          color: #4f16aa; // Cor dos ícones
+      }
+  }
 }
+
 
 #musicPlayerSection {
   padding: 50px 0;
@@ -107,25 +129,26 @@ body {
 
   h3 {
     font-size: 24px;
-    margin-bottom: 10px; // Menor margem entre o título e o player
+    margin-bottom: 10px;
     text-align: center;
   }
 
   .player {
     display: flex;
-    align-items: center; // Alinha a capa com o player
+    align-items: center;
     justify-content: center;
     text-align: left;
+    border-radius: 25px;
   }
 
   .cover-image {
-    width: 80px; // Defina uma largura fixa
-    height: 80px; // Defina uma altura fixa
-    border-radius: 50%; // Mantém o formato circular
-    margin-right: 20px; // Aproxima a capa do player
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     animation: spin 5s linear infinite;
-    object-fit: cover; // Garante que a imagem se ajuste ao formato circular
+    object-fit: cover;
     margin-bottom: 36px;
   }
 
@@ -141,13 +164,16 @@ body {
   .audio-section {
     display: flex;
     flex-direction: column;
-    align-items: center; // Centraliza o conteúdo verticalmente
+    align-items: center;
     width: 50%;
   }
 
   audio {
     width: 100%;
     margin-bottom: 15px;
+    background-color: #00080eef; /* Azul escuro para o fundo do player */
+    color: #ffffff; /* Texto branco no player */
+    border-radius: 85px; /* Deixa as bordas arredondadas */
   }
 
   .controls {
@@ -161,15 +187,43 @@ body {
       border: none;
       padding: 10px 20px;
       font-size: 20px;
-      color: white;
+      color: white; /* Cor dos ícones de controle para branco */
       border-radius: 5px;
       transition: background-color 0.3s;
       margin: 0 5px;
 
-      
+      i {
+        color: white; /* Deixa os ícones internos dos botões brancos */
+      }
     }
   }
 }
+
+audio::-webkit-media-controls-panel {
+  background-color: #24005e; /* Azul escuro para o fundo do player */
+  border: none; /* Remove as bordas no painel */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-next-track-button,
+audio::-webkit-media-controls-previous-track-button {
+  color: white; /* Ícones do player em branco */
+  filter: brightness(100);
+}
+
+audio::-webkit-media-controls-volume-slider {
+  accent-color: white; /* Deixa a barrinha de volume branca */
+}
+
+audio {
+  outline: none; /* Remove o outline padrão quando o elemento está focado */
+}
+
 
 #discographySection {
   
@@ -398,6 +452,7 @@ footer {
         font-size: 14px; // Tamanho menor do autor
       }
     }
+    
   }
 
   @media (max-width: 480px) {

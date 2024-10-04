@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -80,10 +81,26 @@ body {
 
 .highlights {
   background: linear-gradient(180deg, #00697e, #00414e, #00252c, rgba(0, 8, 14, 0.937254902));
-  color: white;
-  padding: 50px;
-  text-align: center;
-  width: 100%;
+  padding: 40px 0;
+}
+.highlights .highlight-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+.highlights .highlight-card:hover {
+  transform: translateY(-5px);
+}
+.highlights .highlight-card h4 {
+  margin-top: 15px;
+  color: #f0f0f0;
+}
+.highlights .highlight-card p {
+  color: #b0b0b0;
+}
+.highlights .highlight-card i {
+  color: #4f16aa;
 }
 
 #musicPlayerSection {
@@ -102,6 +119,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: left;
+  border-radius: 25px;
 }
 #musicPlayerSection .cover-image {
   width: 80px;
@@ -130,6 +148,9 @@ body {
 #musicPlayerSection audio {
   width: 100%;
   margin-bottom: 15px;
+  background-color: rgba(0, 8, 14, 0.937254902); /* Azul escuro para o fundo do player */
+  color: #ffffff; /* Texto branco no player */
+  border-radius: 85px; /* Deixa as bordas arredondadas */
 }
 #musicPlayerSection .controls {
   display: flex;
@@ -142,10 +163,38 @@ body {
   border: none;
   padding: 10px 20px;
   font-size: 20px;
-  color: white;
+  color: white; /* Cor dos ícones de controle para branco */
   border-radius: 5px;
   transition: background-color 0.3s;
   margin: 0 5px;
+}
+#musicPlayerSection .controls button i {
+  color: white; /* Deixa os ícones internos dos botões brancos */
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #24005e; /* Azul escuro para o fundo do player */
+  border: none; /* Remove as bordas no painel */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-next-track-button,
+audio::-webkit-media-controls-previous-track-button {
+  color: white; /* Ícones do player em branco */
+  filter: brightness(100);
+}
+
+audio::-webkit-media-controls-volume-slider {
+  accent-color: white; /* Deixa a barrinha de volume branca */
+}
+
+audio {
+  outline: none; /* Remove o outline padrão quando o elemento está focado */
 }
 
 #discographySection {

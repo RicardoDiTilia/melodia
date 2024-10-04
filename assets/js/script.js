@@ -7,17 +7,17 @@ const songs = [
     {
         title: "Playboi Carti, The Weeknd - Timeless",
         src: "assets/img/songs/timeless.mp3",
-        cover: "assets/img/collab/cover/PLABOI CARTI.png"
+        cover: "assets/img/collab/cover/cartitheweeknd.jpeg"
     },
     {
         title: "Billie Eilish - Birds Of A Feather",
         src: "assets/img/songs/birdsofafeather.mp3",
-        cover: "assets/img/collab/cover/BILLIE EILISH.png"
+        cover: "assets/img/collab/cover/hitmehardandsoft.jpeg"
     },
     {
         title: "Travis Scott - Drugs You Should Try It",
         src: "assets/img/songs/drugsyoushouldtryit.mp3",
-        cover: "assets/img/collab/cover/TRAVIS SCOTT.png"
+        cover: "assets/img/collab/cover/daysbeforerodeo.png"
     },
     {
         title: "Kanye West - All Falls Down",
@@ -25,9 +25,9 @@ const songs = [
         cover: "assets/img/collab/cover/ALLFALLSDOWN.png"
     },
     {
-        title: "Post Malone - Killed A Man",
-        src: "assets/img/songs/killedaman.mp3",
-        cover: "assets/img/collab/cover/POST MALONE.png"
+        title: "Post Malone, Future, Halsey - Die For Me",
+        src: "assets/img/songs/dieforme.mp3",
+        cover: "assets/img/collab/cover/hollywoodsbleeding.jpeg"
     },
     {
         title: "Metro Boomin, Future - Young Metro",
@@ -53,7 +53,12 @@ const songs = [
         title: "Playboi Carti - HOODBYAIR",
         src: "assets/img/songs/hoodbyair.mp3",
         cover: "assets/img/collab/cover/iammusiccarti.jpg"
-    }
+    },
+    {
+        title: "Post Malone - Hollywood's Bleeding",
+        src: "assets/img/songs/hollywoodsbleeding.mp3",
+        cover: "assets/img/collab/cover/hollywoodsbleeding.jpeg"
+    },
 ];
 
 let currentSongIndex = 0;
