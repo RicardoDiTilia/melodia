@@ -26,6 +26,16 @@ const songs = [
         cover: "assets/img/collab/cover/ALLFALLSDOWN.png"
     },
     {
+        title: "Kendrick Lamar - LOYALTY. ft. Rihanna",
+        src: "assets/img/songs/loyalty.mp3",
+        cover: "assets/img/collab/cover/damnkendrick.png"
+    },
+    {
+        title: "Playboi Carti - Magnolia",
+        src: "assets/img/songs/magnolia.mp3",
+        cover: "assets/img/collab/cover/cartialbum.png"
+    },
+    {
         title: "Post Malone, Future, Halsey - Die For Me",
         src: "assets/img/songs/dieforme.mp3",
         cover: "assets/img/collab/cover/hollywoodsbleeding.jpeg"
@@ -39,11 +49,45 @@ const songs = [
         title: "A$AP Rocky, Joe Fox - Holy Ghost",
         src: "assets/img/songs/holyghost.mp3",
         cover: "assets/img/collab/cover/atlonglastasap.jpg"
+    },{
+        title: "Frank Ocean - White Ferrari",
+        src: "assets/img/songs/whiteferrari.mp3",
+        cover: "assets/img/collab/cover/frankoceanblonde.png"
+    },
+    {
+        title: "Playboi Carti - ILoveUIHateU",
+        src: "assets/img/songs/iloveuihateu.mp3",
+        cover: "assets/img/collab/cover/wholelottared.png"
+    },
+    {
+        title: "Billie Eilish - Happier Than Ever",
+        src: "assets/img/songs/happierthanever.mp3",
+        cover: "assets/img/collab/cover/billieblond.png"
+    },
+    {
+        title: "The Weeknd - Die For You",
+        src: "assets/img/songs/dieforyou.mp3",
+        cover: "assets/img/collab/cover/starboy.png"
+    },
+    {
+        title: "Don Toliver - BACKSTREETS (FEAT. TEEZO TOUCHDOWN)",
+        src: "assets/img/songs/backstreets.mp3",
+        cover: "assets/img/collab/cover/dontoliver.png"
+    },
+    {
+        title: "Playboi Carti - R.I.P.",
+        src: "assets/img/songs/rip.mp3",
+        cover: "assets/img/collab/cover/dielit.png"
     },
     {
         title: "Travis Scott - Mo City Flexologist",
         src: "assets/img/songs/mocityflexologist.mp3",
         cover: "assets/img/collab/cover/travisdeluxe.png"
+    },
+    {
+        title: "Kendrick Lamar - HUMBLE",
+        src: "assets/img/songs/humble.mp3",
+        cover: "assets/img/collab/cover/damnkendrick.png"
     },
     {
         title: "Kanye West, Pusha T - Runaway",
@@ -53,13 +97,39 @@ const songs = [
     {
         title: "Playboi Carti - HOODBYAIR",
         src: "assets/img/songs/hoodbyair.mp3",
-        cover: "assets/img/collab/cover/iammusiccarti.jpg"
+        cover: "assets/img/collab/cover/iammusic2.png"
+    },
+    {
+        title: "Frank Ocean - Lost",
+        src: "assets/img/songs/lost.mp3",
+        cover: "assets/img/collab/cover/frankoceanchannelorange.png"
     },
     {
         title: "Post Malone - Hollywood's Bleeding",
         src: "assets/img/songs/hollywoodsbleeding.mp3",
         cover: "assets/img/collab/cover/hollywoodsbleeding.jpeg"
     },
+    {
+        title: "Don Toliver - TORE UP",
+        src: "assets/img/songs/toreup.mp3",
+        cover: "assets/img/collab/cover/dontoliver.png"
+    },
+    {
+        title: "Kendrick Lamar - Rich Spirit",
+        src: "assets/img/songs/richspirit.mp3",
+        cover: "assets/img/collab/cover/kendricksteppers.png"
+    },
+    {
+        title: "Frank Ocean - Chanel",
+        src: "assets/img/songs/chanel.mp3",
+        cover: "assets/img/collab/cover/frankoceanchanel.png"
+    },
+    {
+        title: "Post Malone - Killed A Man",
+        src: "assets/img/songs/killedaman.mp3",
+        cover: "assets/img/collab/cover/f1trillion.png"
+    },
+    
 ];
 
 let currentSongIndex = 0;
