@@ -11,16 +11,18 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: rgba(0, 8, 14, 0.937254902);
   color: white;
   font-family: "League Spartan", sans-serif;
 }
 
 .navbar {
+  border-bottom: 2px solid #4f16aa;
   background-color: black;
 }
 
-.gradient-text h2, .gradient-text p {
+.gradient-text h2,
+.gradient-text p {
   color: white;
   font-size: 35px;
   padding-top: 27px;
@@ -76,7 +78,7 @@ body {
 }
 
 .highlights {
-  background: linear-gradient(180deg, #00697e, #00414e, #00252c, #000000);
+  background: linear-gradient(180deg, #00697e, #00414e, #00252c, rgba(0, 8, 14, 0.937254902));
   color: white;
   padding: 50px;
   text-align: center;
@@ -84,7 +86,7 @@ body {
 }
 
 #discographySection {
-  background: linear-gradient(180deg, black, black, rgb(0, 32, 58));
+  background: linear-gradient(180deg, rgba(0, 8, 14, 0.937254902), rgba(0, 8, 14, 0.937254902), #001E37);
   color: rgb(255, 255, 255);
   padding: 50px;
   text-align: center;
@@ -110,7 +112,68 @@ body {
   margin: 0 auto;
 }
 
+#featuresSection {
+  background: linear-gradient(180deg, #001E37, #001128, #000209);
+  padding: 80px 0;
+  width: 100%;
+  margin: 0;
+}
+#featuresSection .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+#featuresSection .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+#featuresSection .col-md-4 {
+  flex: 1 1 30%;
+  max-width: calc(33.33% - 30px);
+  margin: 15px;
+}
+#featuresSection .card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  color: white;
+}
+#featuresSection .card:hover {
+  transform: scale(1.05);
+}
+#featuresSection .card h3 {
+  font-size: 24px;
+  margin: 10px 0 0;
+  position: relative;
+  z-index: 1;
+}
+#featuresSection .card p {
+  margin-top: 5px;
+  color: #b3b3b3;
+  position: relative;
+  z-index: 1;
+}
+#featuresSection .card i {
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  color: #4f16aa;
+  z-index: 1;
+}
+
 footer {
+  border-top: 2px solid #4f16aa;
   padding: 10px;
   font-size: 0.8rem;
   background-color: black;
@@ -130,7 +193,8 @@ footer form .form-row {
   width: 100%;
   max-width: 800px;
 }
-footer form .form-row input, footer form .form-row textarea {
+footer form .form-row input,
+footer form .form-row textarea {
   width: 48%;
   max-width: 100%;
   height: 25px;
@@ -147,6 +211,96 @@ footer form .user-reviews {
 footer .footer-content {
   text-align: center;
   margin-top: 10px;
+}
+
+#testimonialsSection {
+  background: linear-gradient(180deg, #111111, #2c2c2c);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 2px solid #4f16aa;
+}
+#testimonialsSection h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#testimonialsSection .testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: row;
+  max-width: 1400px;
+}
+#testimonialsSection .testimonial {
+  background-color: #2c2c2c;
+  border-radius: 15px;
+  padding: 10px 20px 10px 20px;
+  margin: 20px 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(33.33% - 30px);
+  height: 200px;
+  box-sizing: border-box;
+}
+#testimonialsSection .testimonial:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+#testimonialsSection .testimonial p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+#testimonialsSection .testimonial cite {
+  font-size: 16px;
+  color: #b3b3b3;
+  display: block;
+  margin-top: 5px;
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  #testimonialsSection h2 {
+    font-size: 28px;
+  }
+  #testimonialsSection .testimonial {
+    width: calc(50% - 20px);
+    padding: 15px;
+  }
+  #testimonialsSection .testimonial p {
+    font-size: 16px;
+  }
+  #testimonialsSection .testimonial cite {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  #testimonialsSection .testimonial {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+  .testimonial {
+    padding: 15px;
+  }
+  .testimonial p {
+    font-size: 16px;
+  }
+  .testimonial cite {
+    font-size: 14px;
+  }
+}
+.user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
