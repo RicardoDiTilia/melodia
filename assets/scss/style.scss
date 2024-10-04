@@ -10,6 +10,8 @@ html {
   background-color: #121212;
 }
 
+
+
 body {
   
   background-color: #00080eef;
@@ -149,13 +151,14 @@ body {
     display: flex; // Usamos flexbox
     justify-content: center; // Centraliza os cartões na linha
     flex-wrap: wrap; // Permite que os cartões se movam para a linha seguinte
-    margin: 0 -15px; // Ajuste para lidar com o espaçamento entre os cartões
+    margin: 0 -10px; // Ajuste para lidar com o espaçamento entre os cartões
   }
 
   .col-md-4 {
     flex: 1 1 30%; // Ajusta o tamanho das colunas para ocupar 30% do espaço
     max-width: calc(33.33% - 30px); // Limita a largura máxima para 3 colunas
     margin: 15px; // Adiciona espaço entre os cartões
+    padding-right: 30px;
   }
 
   .card {

@@ -128,12 +128,13 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: 0 -10px;
 }
 #featuresSection .col-md-4 {
   flex: 1 1 30%;
   max-width: calc(33.33% - 30px);
   margin: 15px;
+  padding-right: 30px;
 }
 #featuresSection .card {
   position: relative;
