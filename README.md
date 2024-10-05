@@ -1,6 +1,11 @@
-# Melodia - O Melhor Streaming de Música
-
+# Melodia - Escolha a Melodia para cada momento do seu dia
 Bem-vindo ao **Melodia**, o streaming de música que oferece a melhor experiência para os amantes de música. Este projeto foi desenvolvido utilizando HTML, CSS, Bootstrap e JavaScript, visando criar uma interface responsiva e dinâmica.
+
+## Integrantes 🫂
+
+- **Carlos Eduardo  |   RM556785**
+- **Lucas Simidu    |   RM555931**
+- **Ricardo Di Tilia|   RM555155**
 
 ## Visão Geral
 
