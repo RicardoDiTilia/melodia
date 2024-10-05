@@ -80,6 +80,11 @@ const songs = [
         cover: "assets/img/collab/cover/dielit.png"
     },
     {
+        title: "Drake, Giveon - Chicago Freestyle ft. Giveon",
+        src: "assets/img/songs/chicagofreestyle.mp3",
+        cover: "assets/img/collab/cover/drakealbum.png"
+    },
+    {
         title: "Travis Scott - Mo City Flexologist",
         src: "assets/img/songs/mocityflexologist.mp3",
         cover: "assets/img/collab/cover/travisdeluxe.png"
