@@ -10,10 +10,7 @@ html {
   background-color: #00080eef;
 }
 
-
-
 body {
-  
   background-color: #00080eef;
   color: white;
   font-family: "League Spartan", sans-serif;
@@ -49,7 +46,7 @@ body {
 }
 
 #carouselSection {
-  background-color:#00080eef;
+  background-color: #00080eef;
   color: rgb(255, 255, 255);
   padding: 50px;
   text-align: center;
@@ -76,8 +73,8 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
-  max-width: 90%; // Permite que o conteúdo ocupe até 90% da largura do container
-  width: 100%; // Garante que o conteúdo se ajuste ao tamanho do carrossel
+  max-width: 90%;
+  width: 100%;
 
   h2 {
     font-size: 2rem;
@@ -91,7 +88,6 @@ body {
     }
   }
 
-  // Estilos para telas menores
   @media (max-width: 768px) {
     h2 {
       font-size: 0.8rem;
@@ -101,96 +97,91 @@ body {
       font-size: 1rem !important;
     }
 
-    max-width: 100%; // Expande o texto para ocupar mais espaço em telas pequenas
-    padding: 0 10px; // Adiciona algum espaço interno nas laterais
+    max-width: 100%;
+    padding: 0 10px;
   }
 }
-
-
-
-
 
 .highlights {
   background: linear-gradient(180deg, #00697e, #00414e, #00252c, #00080eef);
-  padding: 80px 0; // Alinhando o padding com a seção de features
-  width: 100%; // Garante que a seção ocupe toda a largura
-  margin: 0; // Remove margens para que não haja espaço nas laterais
+  padding: 80px 0;
+  width: 100%;
+  margin: 0;
 
   .content h3 {
-    font-size: 30px; /* Ajuste o tamanho da fonte */
-    color: white; /* Cor branca para combinar com o estilo da seção */
-}
+    font-size: 30px;
+    color: white;
+  }
 
   .container {
-    width: 100%; // Garante que o container ocupe toda a largura
-    max-width: 1200px; // Largura máxima para centralização
-    margin: 0 auto; // Centraliza o container
-    padding: 0 15px; // Adiciona espaçamento interno
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 
   .row {
-    display: flex; // Usamos flexbox
-    justify-content: center; // Centraliza os cartões na linha
-    flex-wrap: wrap; // Permite que os cartões se movam para a linha seguinte
-    margin: 0 -10px; // Ajuste para lidar com o espaçamento entre os cartões
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
     margin-right: 5px;
   }
 
   .col-md-4 {
-    flex: 1 1 30%; // Ajusta o tamanho das colunas para ocupar 30% do espaço
-    max-width: calc(33.33% - 30px); // Limita a largura máxima para 3 colunas
-    margin: 15px; // Adiciona espaço entre os cartões
-    transition: transform 0.3s ease; // Transição suave
+    flex: 1 1 30%;
+    max-width: calc(33.33% - 30px);
+    margin: 15px;
+    transition: transform 0.3s ease;
 
-    @media (max-width: 768px) { // Media query para telas menores
-      flex: 1 1 100%; // Ocupa 100% do espaço
-      max-width: 100%; // Limita a largura máxima a 100%
-      margin: 10px 0; // Margem entre os cartões
-      transform: scale(0.9); // Reduz o tamanho dos cards levemente
+    @media (max-width: 768px) {
+      flex: 1 1 100%;
+      max-width: 100%;
+      margin: 10px 0;
+      transform: scale(0.9);
     }
   }
 
   .highlight-card {
     position: relative;
-    border-radius: 15px; // Mesma borda arredondada
+    border-radius: 15px;
     overflow: hidden;
-    background-color: #1a1a1a; // Fundo dos cards
-    height: 215px; // Altura fixa para garantir que sejam quadrados
+    background-color: #1a1a1a;
+    height: 215px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
-    color: white; // Cor do texto
+    color: white;
 
     &:hover {
-      transform: scale(1.05); // Aumenta o tamanho ao passar o mouse
+      transform: scale(1.05);
     }
 
     h4 {
-      font-size: 24px; // Tamanho do título
+      font-size: 24px;
       margin: 10px 0 0;
-      position: relative; // Para que o texto se sobreponha à imagem
-      z-index: 1; // Aumenta a sobreposição em relação ao fundo
+      position: relative;
+      z-index: 1;
     }
 
     p {
-      margin-top: 5px; // Margem acima do parágrafo
-      color: #b3b3b3; // Cor do texto da descrição
+      margin-top: 5px;
+      color: #b3b3b3;
       position: relative;
-      z-index: 1; // Aumenta a sobreposição em relação ao fundo
+      z-index: 1;
     }
 
     i {
-      font-size: 40px; // Tamanho do ícone
+      font-size: 40px;
       position: absolute;
-      top: 20px; // Distância do topo
-      color: #4f16aa; // Cor do ícone
-      z-index: 1; // Aumenta a sobreposição em relação ao fundo
+      top: 20px;
+      color: #4f16aa;
+      z-index: 1;
     }
   }
 }
-
 
 .quality-title {
   font-size: 2.5rem;
@@ -201,10 +192,11 @@ body {
 }
 
 #playNowButton {
-  padding: 10px 20px; /* Ajusta a altura e largura do botão */
-  font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+  padding: 10px 20px;
+  font-size: 1.2rem;
   margin-bottom: 1px;
 }
+
 
 #musicPlayerSection {
   padding: 50px 0;
@@ -257,9 +249,9 @@ body {
   audio {
     width: 100%;
     margin-bottom: 15px;
-    background-color: #00080eef; /* Azul escuro para o fundo do player */
-    color: #ffffff; /* Texto branco no player */
-    border-radius: 85px; /* Deixa as bordas arredondadas */
+    background-color: #00080eef; 
+    color: #ffffff; 
+    border-radius: 85px; 
     border: #24005e;
   }
 
@@ -274,21 +266,21 @@ body {
       border: none;
       padding: 10px 20px;
       font-size: 20px;
-      color: white; /* Cor dos ícones de controle para branco */
+      color: white; 
       border-radius: 5px;
       transition: background-color 0.3s;
       margin: 0 5px;
 
       i {
-        color: white; /* Deixa os ícones internos dos botões brancos */
+        color: white; 
       }
     }
   }
 }
 
 audio::-webkit-media-controls-panel {
-  background-color: #24005e; /* Azul escuro para o fundo do player */
-  border: none; /* Remove as bordas no painel */
+  background-color: #24005e; 
+  border: none; 
 }
 
 audio::-webkit-media-controls-play-button,
@@ -299,16 +291,16 @@ audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-time-remaining-display,
 audio::-webkit-media-controls-next-track-button,
 audio::-webkit-media-controls-previous-track-button {
-  color: white; /* Ícones do player em branco */
+  color: white; 
   filter: brightness(100);
 }
 
 audio::-webkit-media-controls-volume-slider {
-  accent-color: white; /* Deixa a barrinha de volume branca */
+  accent-color: white; 
 }
 
 audio {
-  outline: none; /* Remove o outline padrão quando o elemento está focado */
+  outline: none; 
 }
 
 
@@ -351,37 +343,36 @@ audio {
 #featuresSection {
   background: linear-gradient(180deg, #001E37, #001128, #000209);
   padding: 80px 0;
-  width: 100%; // Garante que a seção ocupe toda a largura
-  margin: 0; // Remove margens para que não haja espaço nas laterais
+  width: 100%; 
+  margin: 0; 
 
 
   .container {
-    width: 100%; // Garante que o container ocupe toda a largura
-    max-width: 1200px; // Largura máxima para centralização
-    margin: 0 auto; // Centraliza o container
-    padding: 0 15px; // Adiciona espaçamento interno
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
   }
 
   .row {
-    display: flex; // Usamos flexbox
-    justify-content: center; // Centraliza os cartões na linha
-    flex-wrap: wrap; // Permite que os cartões se movam para a linha seguinte
-    margin: 0 -10px; // Ajuste para lidar com o espaçamento entre os cartões
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
     margin-left: 18px;
   }
 
   .col-md-4 {
-    flex: 1 1 30%; // Ajusta o tamanho das colunas para ocupar 30% do espaço
-    max-width: calc(33.33% - 30px); // Limita a largura máxima para 3 colunas
-    margin: 15px; // Adiciona espaço entre os cartões
+    flex: 1 1 30%; 
+    max-width: calc(33.33% - 30px); 
+    margin: 15px; 
     padding-right: 65px;
-    transition: transform 0.3s ease; // Transição suave
+    transition: transform 0.3s ease; 
 
-    @media (max-width: 768px) { // Media query para telas menores
-      flex: 1 1 100%; // Ocupa 100% do espaço
-      max-width: 100%; // Limita a largura máxima a 100%
-      margin: 10px 0; // Margem entre os cartões
-      transform: scale(0.9); // Reduz o tamanho dos cards levemente
+    @media (max-width: 768px) { 
+      flex: 1 1 100%; 
+      max-width: 100%; 
+      margin: 10px 0; 
+      transform: scale(0.9); 
     }
   }
 
@@ -389,40 +380,40 @@ audio {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    background-size: cover; // Para a imagem de fundo cobrir o cartão
-    background-position: center; // Centraliza a imagem de fundo
-    height: 275px; // Altura fixa para garantir que sejam quadrados
+    background-size: cover; 
+    background-position: center; 
+    height: 275px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
-    color: white; // Cor do texto
+    color: white; 
 
     &:hover {
-      transform: scale(1.05); // Aumenta o tamanho ao passar o mouse
+      transform: scale(1.05); 
     }
 
     h3 {
       font-size: 24px;
       margin: 10px 0 0;
-      position: relative; // Para que o texto se sobreponha à imagem
-      z-index: 1; // Aumenta a sobreposição em relação ao fundo
+      position: relative; 
+      z-index: 1; 
     }
 
     p {
       margin-top: 5px;
-      color: #b3b3b3; // Cor do texto da descrição
+      color: #b3b3b3; 
       position: relative;
-      z-index: 1; // Aumenta a sobreposição em relação ao fundo
+      z-index: 1; 
     }
 
     i {
-      font-size: 40px; // Tamanho do ícone
+      font-size: 40px; 
       position: absolute;
-      top: 20px; // Distância do topo
-      color: #4f16aa; // Cor do ícone
-      z-index: 1; // Aumenta a sobreposição em relação ao fundo
+      top: 20px; 
+      color: #4f16aa; 
+      z-index: 1; 
     }
   }
 }
@@ -431,9 +422,9 @@ audio {
 
 // Estilo do Footer
 footer {
-  border-top: 2px solid #4f16aa; /* Borda superior roxa */
-  padding: 10px; /* Espaçamento compacto */
-  font-size: 0.8rem; /* Texto menor */
+  border-top: 2px solid #4f16aa; 
+  padding: 10px; 
+  font-size: 0.8rem; 
   background-color: black;
   display: flex;
   justify-content: center;
@@ -441,7 +432,7 @@ footer {
   align-items: center;
 
   h2 {
-      font-size: 1.5rem; /* Tamanho do título no footer */
+      font-size: 1.5rem; 
       margin-bottom: 20px;
   }
 
@@ -449,7 +440,7 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 800px; /* Limita a largura máxima do form */
+      max-width: 800px; 
       width: 100%;
       
       .row {
@@ -457,43 +448,43 @@ footer {
       }
 
       .form-control {
-          width: 100%; /* Garantindo que os inputs ocupem a largura completa */
-          height: 40px; /* Altura dos campos */
-          font-size: 0.9rem; /* Tamanho da fonte nos campos */
-          margin-bottom: 10px; /* Espaçamento entre os inputs */
+          width: 100%; 
+          height: 40px; 
+          font-size: 0.9rem; 
+          margin-bottom: 10px; 
       }
 
       textarea {
           height: auto;
-          resize: vertical; /* Permite redimensionar verticalmente */
+          resize: vertical; 
       }
 
       button {
-          font-size: 0.9rem; /* Tamanho do botão */
-          padding: 8px 20px; /* Espaçamento interno do botão */
+          font-size: 0.9rem; 
+          padding: 8px 20px; 
       }
   }
 
   .footer-content {
       text-align: center;
-      margin-top: 10px; /* Pequeno espaço acima dos direitos autorais */
+      margin-top: 10px; 
   }
 }
 
 
 
 #testimonialsSection {
-  background: linear-gradient(180deg, #111111, #2c2c2c); // Gradiente escuro
+  background: linear-gradient(180deg, #111111, #2c2c2c); 
   color: white;
-  padding: 50px 20px; // Espaçamento interno
-  text-align: center; // Centraliza o texto
-  border-top: 2px solid #4f16aa; // Borda superior para destaque
+  padding: 50px 20px; 
+  text-align: center; 
+  border-top: 2px solid #4f16aa; 
 
   h2 {
-    font-size: 36px; // Tamanho da fonte do título
-    margin-bottom: 30px; // Espaçamento abaixo do título
-    color: #ffffff; // Cor do título
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); // Sombra para o texto
+    font-size: 36px; 
+    margin-bottom: 30px; 
+    color: #ffffff; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
   }
 
   .testimonial-container {
@@ -502,56 +493,56 @@ footer {
     justify-content: center;
     margin: 0 auto;
     flex-direction: row;
-    max-width: 1400px; // Aumenta a largura máxima do container
+    max-width: 1400px; 
   }
 
   .testimonial {
-    background-color: #2c2c2c; // Cor de fundo dos depoimentos
-    border-radius: 15px; // Bordas levemente arredondadas
-    padding: 10px 20px 10px 20px; // Aumenta o espaçamento nas laterais e diminui o espaçamento inferior
-    margin: 20px 15px; // Ajuste no espaçamento entre os depoimentos
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); // Sombra para destacar
-    transition: transform 0.3s ease, box-shadow 0.3s ease; // Transição suave para hover
-    width: calc(33.33% - 30px); // Ajusta a largura para 3 blocos por linha
-    height: 200px; // Ajusta a altura para manter a proporção
+    background-color: #2c2c2c; 
+    border-radius: 15px; 
+    padding: 10px 20px 10px 20px; 
+    margin: 20px 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    width: calc(33.33% - 30px); 
+    height: 200px; 
     box-sizing: border-box;
 
     &:hover {
-      transform: scale(1.05); // Efeito de aumento ao passar o mouse
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); // Sombra mais intensa ao passar o mouse
+      transform: scale(1.05); 
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); 
     }
 
     p {
-      font-size: 18px; // Tamanho da fonte da citação
-      margin-bottom: 10px; // Espaçamento abaixo da citação
-      line-height: 1.5; // Melhora a legibilidade
+      font-size: 18px; 
+      margin-bottom: 10px; 
+      line-height: 1.5; 
     }
 
     cite {
-      font-size: 16px; // Tamanho da fonte do autor
-      color: #b3b3b3; // Cor do texto do autor
-      display: block; // Exibe como bloco
-      margin-top: 5px; // Espaçamento acima do autor
-      font-style: italic; // Itálico para o autor
+      font-size: 16px; 
+      color: #b3b3b3; 
+      display: block; 
+      margin-top: 5px; 
+      font-style: italic; 
     }
   }
 
   // Responsividade
   @media (max-width: 768px) {
     h2 {
-      font-size: 28px; // Tamanho menor em telas pequenas
+      font-size: 28px; 
     }
 
     .testimonial {
-      width: calc(50% - 20px); // Ajusta a largura para 2 blocos por linha em telas pequenas
-      padding: 15px; // Menos espaço interno em telas pequenas
+      width: calc(50% - 20px); 
+      padding: 15px; 
       
       p {
-        font-size: 16px; // Tamanho menor da citação
+        font-size: 16px; 
       }
 
       cite {
-        font-size: 14px; // Tamanho menor do autor
+        font-size: 14px; 
       }
     }
     
@@ -559,7 +550,7 @@ footer {
 
   @media (max-width: 480px) {
     .testimonial {
-      width: calc(100% - 20px); // Ajusta para 1 bloco por linha em telas muito pequenas
+      width: calc(100% - 20px); 
     }
   }
 }
@@ -569,47 +560,47 @@ footer {
   // Responsividade
   @media (max-width: 768px) {
     h2 {
-      font-size: 28px; // Tamanho menor em telas pequenas
+      font-size: 28px; 
     }
 
     .testimonial {
-      padding: 15px; // Menos espaço interno em telas pequenas
+      padding: 15px; 
       
       p {
-        font-size: 16px; // Tamanho menor da citação
+        font-size: 16px; 
       }
 
       cite {
-        font-size: 14px; // Tamanho menor do autor
+        font-size: 14px; 
       }
     }
   }
 
 .user-icon {
-  width: 50px; // Tamanho do ícone
-  height: 50px; // Tamanho do ícone
-  border-radius: 50%; // Redondo
-  margin-bottom: 15px; // Espaçamento abaixo do ícone
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%; 
+  margin-bottom: 15px; 
 }
 
 @media (min-width: 992px) {
   footer form {
-      max-width: 600px; /* Limita a largura do formulário */
-      margin: 0 auto; /* Centraliza o formulário horizontalmente */
+      max-width: 600px; 
+      margin: 0 auto; 
   }
 
   footer .row {
-      justify-content: center; /* Centraliza as colunas no desktop */
+      justify-content: center; 
   }
 
   footer .col-md-6 {
-      flex: 0 0 45%; /* Reduz a largura das colunas para centralização */
-      margin: 0 10px; /* Espaçamento lateral entre os campos */
+      flex: 0 0 45%; 
+      margin: 0 10px; 
   }
 }
 
 @media (max-width: 768px) {
   #featuresSection .card {
-    height: 200px; /* Diminui a altura dos cards em telas menores */
+    height: 200px; 
   }
 }
